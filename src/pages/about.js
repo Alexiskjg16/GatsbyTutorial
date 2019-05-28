@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 
 const AboutPage = () => {
     return(
         <Layout>
+            <Head title="AboutMe" />
             <h1> All About Me, Harry J. Potter!</h1>
             <p> Hello, my name is Harry. I am a wizard! You can find me sneaking around the halls of Hogwarts, hiding under a cloak in
                 Hogsmead, or riding a centaur in the Forbidden Forest with my best friends Ron and Hermione. When I am in class I like to 

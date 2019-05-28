@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from '../components/layout'
+import Head from '../components/head'
+
 
 
 const ContactPage = () => {
     return(
         <Layout>
+            <Head title="Contact" />
             <h2>Places I Might Be:</h2>
             <p>The Cupboard Under the Stairs, Privet Drive, Little Whinging</p>
             <p>Boys Dormitory, Gryffindor Tower, Hogwarts</p>

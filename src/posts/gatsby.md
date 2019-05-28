@@ -1,5 +1,5 @@
 ---
-title: "Harry Potter in Gatsby"
+title: "Literal Nonsense in Gatsby"
 date: "May 20 2019"
 ---
 
