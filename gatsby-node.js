@@ -19,22 +19,22 @@ const { createPage } = actions
 const blogTemplate = path.resolve('./src/templates/blog.js')
 const res = await graphql(`
   query {
-    allContentfulBlogPosts {
+    allContentfulFaithArtInspiration {
         edges {
             node {
-                    slug
+                    title
                 }
         }
     }
   }
 `)
 
-res.data.allContentfulBlogPosts.edges.forEach((edges) => {
+res.data.allContentfulFaithArtInspiration.edges.forEach((edges) => {
     createPage({
         component: blogTemplate,
-        path: `/blog/${edges.node.slug}`,
+        path: `/blog/${edges.node.title}`,
         context: {
-            slug: edges.node.slug
+            title: edges.node.title
         }
     })
 })

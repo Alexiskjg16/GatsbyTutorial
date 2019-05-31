@@ -9,20 +9,18 @@ import Head from '../components/head'
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPosts (
-       sort: {
-         fields:publishedDate,
-         order: DESC,
-       }
+      allContentfulFaithArtInspiration (sort: 
+       { fields:date,
+       order: DESC }
      ) {
        edges {
          node {
-           title1
-           slug
-           publishedDate (formatString:"MMM D, YYYY")
+           title
+           date (formatString: "MM Do, YYYY")
+           content { json }
          }
-        }
        }
+     }
      }
     `)
  
@@ -33,12 +31,12 @@ console.log(data)
           <Head title="Blog" />
             <h1> Blog Page!</h1>
             <ol className={BlogStyles.posts}>
-                {data.allContentfulBlogPosts.edges.map((edges) => {
+                {data.allContentfulFaithArtInspiration.edges.map((edges) => {
                     return (
                       <li className={BlogStyles.post}>
-                        <Link to={`/blog/${edges.node.slug}`}>
-                        <h2>{edges.node.title1}</h2>
-                        <p>{edges.node.publishedDate}</p>
+                        <Link to={`/blog/${edges.node.title}`}>
+                        <h2>{edges.node.title}</h2>
+                        <p>{edges.node.date}</p>
                         </Link>
                       </li>
                     )

@@ -19,11 +19,11 @@ import Head from '../components/head'
 //   }`
 
 export const query = graphql`
-query( $slug: String! ) {
-   contentfulBlogPosts(slug: {eq: $slug}){
-     title1
-     publishedDate(formatString: "MMMM D, YYYY")
-     body {
+query( $title: String! ) {
+   contentfulFaithArtInspiration(title: {eq: $title}){
+     title
+     date(formatString: "MMMM D, YYYY")
+     content {
        json
      }
    }
@@ -43,10 +43,10 @@ const Blog = (props) => {
 
     return (
         <Layout>
-          <Head title={props.data.contentfulBlogPosts.title1} />
-         <h1>{props.data.contentfulBlogPosts.title1}</h1>
-         <p>{props.data.contentfulBlogPosts.publishedDate}</p>
-         {documentToReactComponents(props.data.contentfulBlogPosts.body.json, options)}
+          <Head title={props.data.contentfulFaithArtInspiration.title} />
+         <h1>{props.data.contentfulFaithArtInspiration.title}</h1>
+         <p>{props.data.contentfulFaithArtInspiration.date}</p>
+         {documentToReactComponents(props.data.contentfulFaithArtInspiration.body.json, options)}
         </Layout>
     )
 }

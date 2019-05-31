@@ -16,7 +16,7 @@
     "@contentful/rich-text-react-renderer": "^13.2.0",
     "dependencies": "0.0.1",
     "gatsby": "^2.7.3",
-    "gatsby-cli": "^2.6.2",
+    "gatsby-cli": "^2.6.3",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.1.1",
@@ -29,7 +29,8 @@
     "peer": "^0.2.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "surge": "^0.21.0"
   },
   "devDependencies": {
     "env-cmd": "^9.0.1",

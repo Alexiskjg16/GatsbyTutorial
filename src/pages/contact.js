@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from '../components/layout'
 import Head from '../components/head'
+import { Link } from 'gatsby'
+import ContactStyles from './contact.module.scss'
 
 
 
@@ -8,14 +10,11 @@ const ContactPage = () => {
     return(
         <Layout>
             <Head title="Contact" />
-            <h2>Places I Might Be:</h2>
-            <p>The Cupboard Under the Stairs, Privet Drive, Little Whinging</p>
-            <p>Boys Dormitory, Gryffindor Tower, Hogwarts</p>
-            <p>The Leaky Cauldron, Diagon Alley, London</p>
-            <p> Number 12 Grimauld Place</p>
-            <p>The Burrow</p>
-
-            <p>OR <a href="https://www.pottermore.com/" target="blank"> Online Maybe?</a></p>
+            <section className={ContactStyles.Links}>
+             <a href="https://www.facebook.com/faithartinspiration/"> Facebook</a>
+             <a href="https://www.instagram.com/faithartinspiration/">Instagram</a>
+             <a href="mailto:stampinhands04@gmail.com">Email</a>
+             </section>
         </Layout>
     )
 }

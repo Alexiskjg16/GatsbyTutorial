@@ -1,5 +1,7 @@
 .header {
-    margin: 1rem 0 3rem;
+    width: 750px;
+    background: rgb(255, 149, 255);
+    margin-bottom: 3em;
 }
 
 .title {
@@ -15,16 +17,16 @@
 }
 
 .nav-item {
-    color: #999999;
+    color: #ffffff;
     font-size: .9rem;
     margin-right: 1.3rem;
     text-decoration: none;
 }
 
 .nav-item:hover {
-    color: #666666;
+    color: #818181;
 }
 
 .active-nav-item {
-    color: #333333;
+    color: #000000;
 }

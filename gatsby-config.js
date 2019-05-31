@@ -1,7 +1,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Harry Potter Fansite',
+    title: 'Faith Art Inspiration',
     author: 'Alexis Grisham'
   },
 
@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve:'gatsby-source-contentful',
       options: {
-        spaceId: 'i2qzg2n3b0vw',
-        accessToken: '3lQ3Gscxbc4h_uA9gcVQoQy1Fwxm13KaDAHVSXGGOn0'
+        spaceId: 'owmi0k2tk5w7',
+        accessToken: 'xMlsGgrC4qhyVXQgHaShhcsJG7XHxUDxuVqBxKaa3XQ'
       }
     },
     'gatsby-plugin-sass',

@@ -8,13 +8,14 @@ const AboutPage = () => {
     return(
         <Layout>
             <Head title="AboutMe" />
-            <h1> All About Me, Harry J. Potter!</h1>
-            <p> Hello, my name is Harry. I am a wizard! You can find me sneaking around the halls of Hogwarts, hiding under a cloak in
-                Hogsmead, or riding a centaur in the Forbidden Forest with my best friends Ron and Hermione. When I am in class I like to 
-                talk back to teachers and not pay attention to important lessons, yet with the help of brilliant Hermione Ron and I still 
-                manage to pass our classes. </p>
+            <p> I am married to my wonderful husband of 36 years, and have two beautiful grown daughters. I believe that we were all 
+                created in the image of our God, and since he is the master creator we all have creativity within us.  I like to
+                 share my creative inspirations with others, whether it's with rubber stamps or mixed media, scrapbooking or card making.
+                   I am excited to share what I have learned with others through my company Shared Inspiration through classes held
+                  at a variety of local venues. I have been stamping and scrapbooking since 2004 when my sister introduced me to Stampin'
+                   Up.  I have been a designer for Sparkle n Sprinkle, and have had my own line of rubber stamp sets.</p>
 
-                <p>Wanna know more? <Link to="/contact">Click Here</Link></p>
+                <p>Have More Questions? <Link to="/contact">Click Here</Link></p>
         </Layout>
     )
 }
